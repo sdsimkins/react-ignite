@@ -14,6 +14,9 @@ const GlobalStyles = createGlobalStyle`
     &::-webkiit-scrollbar-thumb{
       background-color: darkgrey;
     }
+    &::-webkit-scrollbar-track {
+    background-color: white;
+    }
   }
   body{
     font-family: "monsterrat", sans-serif;
