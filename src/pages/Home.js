@@ -58,4 +58,5 @@ const Games = styled(motion.div)`
   grid-row-gap: 5rem;
 `;
 
+
 export default Home;
