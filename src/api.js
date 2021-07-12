@@ -1,6 +1,7 @@
 // Base URL 
 const base_url = `https://api.rawg.io/api/`;
 const key = `key=${process.env.REACT_APP_RAWG_API}`;
+// const key = `key=CLOUD_KEY`;
 
 // Getting the date 
 const getCurrentMonth = () => {
