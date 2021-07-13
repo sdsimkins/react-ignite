@@ -8,9 +8,11 @@ import {loadDetail} from "../actions/detailAction";
 import {Link} from "react-router-dom";
 
 const Game = ({name,released,image, id}) => {
-  //Load Details 
+  
+  //Load Details Handler
   const dispatch = useDispatch();
   const loadDetailHandler = () => {
+    document.body.style.overlow = "hidden";
     dispatch(loadDetail(id))
   };
   return (
@@ -35,6 +37,7 @@ const StyledGame = styled(motion.div)`
     object-fit: cover;
   }
   cursor: pointer;
+  overflow: hidden;
 `;
 
 export default Game;
