@@ -8,7 +8,7 @@ import {loadGames} from "../actions/gamesAction.js";
 import Game from "../components/Game";
 import styled from "styled-components";
 import GameDetail from "../components/GameDetail";
-
+import {fadeIn} from "../animations";
 
 const Home = () => {
   // Get current location 
@@ -24,7 +24,7 @@ const Home = () => {
   const {popular, newGames, upcoming, searched} = useSelector(state => state.games);
 
   return (
-    <GameList>
+    <GameList variants={fadeIn} initial="hidden" animate="show" >
       <AnimateSharedLayout type="crossfade">
         <AnimatePresence>
         {pathId && <GameDetail pathId={pathId} />}
